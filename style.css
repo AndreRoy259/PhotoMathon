@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  background: #14213d;
+}
+
+header h2 {
+  padding: 2rem;
+}
+
+#logo {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #fca311;
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+
+.search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border: 2px solid #fca311;
+}
+
+.search-form button {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  background: #fca311;
+  color: #14213d;
+  cursor: pointer;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 0.5rem 0rem;
+}
+
+.gallery-info a {
+  color: gray;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-width: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #14213d;
+  /* padding: 3rem; */
+  margin-top: 2rem;
+  padding: 2rem 0rem;
+}
+
+.more {
+  padding: 1rem 3rem;
+  background: #fca311;
+  color: #14213d;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
